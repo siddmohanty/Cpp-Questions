@@ -26,7 +26,7 @@ int main()
 {
     string s, newString="";
     cin>>s; //Taking string as input
-    vector<char> v(s.begin(), s.end());
-    cout<<rotateString(v, newString);
+    vector<char> v(s.begin(), s.end()); //converting s into vector v
+    cout<<"Reversed String:"<<rotateString(v, newString);
     return 0;
 }
