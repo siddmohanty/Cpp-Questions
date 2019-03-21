@@ -12,6 +12,14 @@ then the resultant set will be 7, 10, 12, 13, 16.
  Last Element
  Value of 'm'
  */
+/* SYNTAX TO PRINT VECTOR ELEMENTS
+
+    v1.shrink_to_fit(); 
+    cout << "\nVector elements are: "; 
+    
+    for (auto it = v1.begin(); it != v1.end(); it++) 
+    cout << *it << " ";
+*/
 
 #include<iostream> 
 #include <vector> 
@@ -37,8 +45,8 @@ int main()
     v1.erase(v1.begin()+count-1); //removing 'm' from vector
     v1.erase(v1.begin()); //Erasing 'no of elements' i.e. first element from vector
     count-=2; //Reducing count by 2 since first and last elements removed
-    v1.shrink_to_fit(); 
     
+    v1.shrink_to_fit(); 
     cout << "\nVector elements after rotation are: "; 
     //Printing last m elements 
     for (auto it = v1.begin()+count-m; it != v1.end(); it++) 
